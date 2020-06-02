@@ -14,9 +14,6 @@ namespace NetCoreTesting.Core
 
         public string Generate()
         {
-            if (MinLength < 0)
-                throw new ArgumentOutOfRangeException("MinLength", "Password length must be greater than 0");
-
             var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             chars += chars.ToLower();
             chars += "0123456789";
